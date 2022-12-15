@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="css/text_style.css">
     <title>ᴀʜᴍᴀᴅ ᴍᴜᴊᴛᴀʙᴀ | ahmad-mujtaba.com</title>
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
     <div class="wrapper">
+        <div id="loader"></div>
         <div class="header">
             <div class="container">
                 <div class="row">
@@ -896,6 +897,15 @@
           </div>
         </footer>
     </div>
+    <script>
+      var myVar;
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+      function showPage() {
+        $("#loader").fadeOut("slow");
+      }
+    </script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 

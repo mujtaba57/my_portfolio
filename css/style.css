@@ -19,31 +19,6 @@ li {
 }
 
 /* ***************************Loader Starts Here********************S */
-/* #loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 120px;
-    height: 120px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #3498db;
-    -webkit-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
-  }
-  
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  } */
-
 #loader {
     position: fixed;
     left: 0px;
@@ -57,12 +32,8 @@ li {
 /* ***************************Loader Ends Here********************S */
 /* ***************************Header Starts Here********************S */
 
-.header {
-    background: transparent;
-    position: relative;
-}
-.header, .banner{
-    background: url("../assets/background3.png") #3D98DB;
+.banner{
+    background: url("../assets/background2.png") #3D98DB;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -72,7 +43,7 @@ li {
     height: 100px;
 }
 #navbarSupportedContent ul > li > a{
-    color: white;
+    color: #10507e;
 }
 .navbar{
     z-index: 1;
@@ -87,6 +58,7 @@ li {
     text-decoration: underline 2px;
     text-underline-position: under;
     text-underline-offset: 4px;
+    color: #3D98DB;
 }
 .nav-link {
     display: inline;
@@ -94,77 +66,68 @@ li {
     overflow: hidden;
   }
 .nav-link:after {
-content: "";
-position: absolute;
-z-index: -1;
-right: 0;
-width: 0;
-bottom: 1px;
-background: rgb(255, 255, 255);
-height: 2px;
-transition-property: width;
-transition-duration: 0.3s;
-transition-timing-function: ease-out;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: 1px;
+    background: #3D98DB;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
 }
 .nav-link:hover:after,
 .nav-link:focus:after {
-left: 0;
-right: auto;
-width: 100%;
+    left: 0;
+    right: auto;
+    width: 100%;
 }
 
 /* *********************Header Ends Here************************S */
 /* ********************* Banner Starts Here********************** */
-.banner-content h1{
-    font-size: 70px;
-}
-.banner-content small{
-    font-size: 25px;
-}
-.banner-content a{
-    width: 130px;
-    transition: all ease-in-out .3s;
-}
-.banner-img {
-    width: 600px;
-    height: 600px;
-    position: relative;
-    bottom: -50px;
-}
-.banner-img>img{
-    background: none;
-    border: none;
-    position: absolute;
-    bottom: 0px;
+
+.typewriter {
+	width: 32ch;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 4px solid #212121;
+	animation: cursor 5s step-start infinite, 
+    text 7s steps(18);
 }
 
-.text-box{
-    position: relative;
+@keyframes cursor {
+	0%, 100% { 
+    border-color: #212121; 
+  }
 }
-.btn-color:hover, .btn-hire-color:hover{
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width: 32ch; 
+  }
+}
+#social_links .fa{
+    background: #3D98DB;
     color: white;
-    background: #4ABFAD;
-    border: none;
+    border: 1px solid white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0px 5px;
+    font-size: 26px;
 }
-.icon-group{
-    background: white;
-    border: 1px solid #3D98DB;
-    border-radius: 25px;
-}
-.icon-group>i{
-    color: #3D98DB;
-}
-.icon-group>i:hover{
-    color: #4ABFAD;
+#social_links .fa:hover{
     cursor: pointer;
-}
-.banner-side{
-    position: absolute;
-    top: 250px;
-    right: 0px;
-}
-.banner-side>div{
-    width: 100px;
+    color: #4ABFAD;
+    background: white;
+    transition: 0.5s ease;
+    border: 1px solid #4ABFAD;
 }
 
 /* *****************************Banner Ends Here*********************************S*/
@@ -400,9 +363,7 @@ width: 100%;
 }
 .icons_cont{
     text-align: center;
-  }
-  
-  
+}
 .round_icon_img{
     border-radius:50%;
     box-shadow: 0 0 6px rgba(0,0,0,.25);
@@ -419,67 +380,67 @@ width: 100%;
     color: #e0571d;
 
 }
-  /* Circle */
-  .hover15 {
-      position: relative;
-      width: 100%;
-      height: auto;
-      padding: 0px !important;
-      overflow: hidden;
-  
-  }
-  
-  .hover15::before {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      z-index: 2;
-      display: block;
-      content: '';
-      width: 0;
-      height: 0;
-      background: rgba(244,229,172,.4);
-      border-radius: 100%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      opacity: 0;
-  }
-  .hover15:hover::before {
-      -webkit-animation: circle .75s;
-      animation: circle .75s;
-  }
-  .hover15 img{
+/* Circle */
+.hover15 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0px !important;
+    overflow: hidden;
+
+}
+
+.hover15::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    background: rgba(244,229,172,.4);
+    border-radius: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.hover15:hover::before {
+    -webkit-animation: circle .75s;
+    animation: circle .75s;
+}
+.hover15 img{
     transition: all .3s;
-  }
-  .hover15:hover img{
+}
+.hover15:hover img{
     transform: scale(1.2);
-  }
-  @-webkit-keyframes circle {
-      0% {
-          opacity: 1;
-      }
-      40% {
-          opacity: 1;
-      }
-      100% {
-          width: 200%;
-          height: 200%;
-          opacity: 0;
-      }
-  }
-  @keyframes circle {
-      0% {
-          opacity: 1;
-      }
-      40% {
-          opacity: 1;
-      }
-      100% {
-          width: 200%;
-          height: 200%;
-          opacity: 0;
-      }
-  }
+}
+@-webkit-keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+@keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
   
 /*carousel_se_02 start*/
 
@@ -619,14 +580,21 @@ width: 100%;
 
 }
 
-
 /* ************************Testimonials Ends Here**************************************** */
-/**************************Footer Starts Here****************************************S  */
+/**************************Reachout Starts Here****************************************  */
+#reach_out{
+    /* clip-path: polygon(100% 0, 100% 76%, 0 100%, 0 21%); */
+    background: #E4E4E2;
+}
+#platforms>.figure >img{
+    width: 100px;
+    height: 100px;
+}
+/**************************Reachout Ends Here****************************************  */
+/**************************Footer Starts Here****************************************  */
+
 #footer{
-    background: url("../assets/map-image.png") #000000;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background: #000000;
 }
 .footer-top .btn{
     width: 200px;
@@ -650,7 +618,7 @@ width: 100%;
         left: 0px;
         right: 0px;
         z-index: 1;
-        background: #3D98DB;
+        background: white;
         top: calc(100% + 10px);
         padding: 20px;
     }
@@ -658,39 +626,7 @@ width: 100%;
         background: white;
         border-radius: 100px;
     }
-    .header, .banner{
+    #hamburge{
         background: #3D98DB;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-    }
-    .banner-bottom:before{
-        display: none;
-    }
-    .banner-img {
-        width: 500px;
-        height: 500px;
-        position: relative;
-        bottom: -30px;
-    }
-    .banner-img>img{
-        position: absolute;
-        bottom: -22px;
-    }
-}
-@media (max-width: 520px){
-    .banner-side{
-        display: none;
-    }
-} 
-@media (max-width: 420px){
-    .banner-img {
-        width: 250px;
-        height: 250px;
-        position: relative;
-        bottom: -30px;
-    }
-    #banner-cont {
-        overflow: overlay;
     }
 }

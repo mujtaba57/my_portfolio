@@ -28,10 +28,10 @@
                             </a>  
                         </strong>
                     </div>
-                    <div class="col-6 col-md-8 d-inline-flex justify-content-end flex-row">
+                    <div class="col-6 col-md-8 d-inline-flex justify-content-end flex-row px-2">
                         <nav class="navbar navbar-expand-lg navbar-dark">
                             <div class="container-fluid">
-                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <button class="navbar-toggler" id="hamburge" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                               </button>
                               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -52,8 +52,8 @@
                                     <a class="nav-link" href="#testimonials">Testimonials</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" href="#footer">Contact</a>
-                                  </li>
+                                    <a class="nav-link" href="#reach_out">Reach out</a>
+                                  </li>                               
                                 </ul>
                               </div>
                             </div>
@@ -64,53 +64,41 @@
         </div>
         <main class="main"> 
           <div class="banner">
-              <div class="banner-top py-5 px-4">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-12 col-md-6 d-flex p-5 align-items-center">
-                              <div class="banner-content d-flex flex-column" id="banner-cont">
-                                <div class="text-box">
-                                  <h4 class="fs-4" style="color:#0ABAE5;">HELLO EVERYBODY, I AM</h4>
-                                  <h2 class="text-dark"><span class="text-dark">AHMAD MUJTABA</span></h2>
-                                </div>
-                                <div class="content">
-                                  <div class="content__container">
-                                    <p class="content__container__text">
-                                      A
-                                    </p>
-                                    <ul class="content__container__list">
-                                      <li class="content__container__list__item">ML Engineer !</li>
-                                      <li class="content__container__list__item">Data Scientist !</li>
-                                      <li class="content__container__list__item">Python Engineer !</li>
-                                      <li class="content__container__list__item">AI  Enthusiast !</li>
-                                    </ul>
-                                  </div>
-                                </div>
-                                <div class="btn-group">
-                                  <a href="#" class="btn btn-color btn-primary my-3 mt-5 w-100 mx-1"><i class="fa fa-download px-2"></i> Download Resume</a>
-                                  <a href="#" class="btn btn-success btn-hire-color my-3 mt-5 w-75">Hire me Now !</a>
-                                </div>
-                              </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex align-items-center justify-content-center py-5" id="banner-text">
+                        <div class="banner-content d-flex flex-column" id="banner-cont">
+                          <div class="text-box">
+                            <h3 class="fs-4" style="color:#0ABAE5;">HELLO EVERYBODY, I AM</h3>
+                            <div class="typewriter"><h2>AHMAD MUJTABA</h2></div>
                           </div>
-                          <div class="col-12 col-md-6 d-flex justify-content-center">
-                              <div class="banner-img">
-                                  <img src="./assets/image.png" class="img-thumbnail" alt="" srcset="">
-                              </div>
+                          <div class="content">
+                            <div class="content__container">
+                              <p class="content__container__text">
+                                A
+                              </p>
+                              <ul class="content__container__list">
+                                <li class="content__container__list__item">ML Engineer</li>
+                                <li class="content__container__list__item">Data Scientist</li>
+                                <li class="content__container__list__item">Python Engineer</li>
+                                <li class="content__container__list__item">AI  Enthusiast ...</li>
+                              </ul>
+                            </div>
                           </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="banner-side py-5 px-4">
-                <div class="col-12 col-md-12 d-flex align-items-center">
-                  <div class="icon-group d-flex flex-column text-center w-50">
-                    <i class="fa fa-linkedin p-2 mt-4"><a href=""></a></i>
-                    <i class="fa fa-facebook-f p-2"><a href=""></a></i>
-                    <i class="fa fa-github p-2"><a href=""></a></i>
-                    <i class="fa fa-instagram p-2"><a href=""></a></i>
-                    <i class="fa fa-twitter p-2 mb-4"><a href=""></a></i>
-                  </div>
+                          <div class="d-flex flex-row icon-group py-5" id="social_links">
+                            <i class="fa fa-linkedin p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="linkedin"><a href=""></a></i>
+                            <i class="fa fa-github p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="github"><a href=""></a></i>
+                            <i class="fa fa-facebook-f p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="facebook"><a href=""></a></i>
+                            <i class="fa fa-instagram p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="instagram"><a href=""></a></i>
+                            <i class="fa fa-twitter p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="twitter"><a href=""></a></i>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 banner-img pt-2">             
+                      <img src="./assets/image.png" class="img-fluid" alt="" srcset="">
+                    </div>
                 </div>
-              </div>
+            </div>
           </div>
           <div class="about-me mt-5 pt-5" id="aboutme">
             <div class="container">
@@ -334,7 +322,7 @@
                       <h2 >Skills</h2>
                       <p>Below are some of my skills, and I'm always looking to learn more.
                           <br/>
-                        (Somewhat outdated, will update soon.)</p>
+                      </p>
                   </div>
                   <div class="col-md-12 px-4 pt-0">
                     <div class="owl-carousel carousel_se_02_carousel owl-theme">
@@ -365,15 +353,11 @@
                         <div class="col-sm-12 p-2 wow fadeInUp delay-2">
                             <div class="">
                                 <div class="product-image3 hover15 d-flex justify-content-center">
-                                    <img src="./assets/skills/opencv.svg" class="img-fluid pic-1">
-                                    
+                                    <img src="./assets/skills/opencv.svg" class="img-fluid pic-1">                                   
                                 </div>
                                 <h4 class="mt-3 text-center">Computer Vision</h4>
-                                
-                                
                           </div>
-                        </div>
-                        
+                        </div>                      
                       </div>
                       <!-- pytorch -->
                       <div class="item">
@@ -518,6 +502,17 @@
                           </div>
                         </div>
                       </div>
+                      <!-- selenium -->
+                      <div class="item">
+                        <div class="col-sm-12 p-2">
+                          <div class="">
+                            <div class="product-image3 hover15 d-flex justify-content-center">
+                                <img src="./assets/skills/selenium.svg" class="img-fluid pic-1">
+                            </div>
+                            <h4 class="mt-3 text-center">Selenium</h4>
+                          </div>
+                        </div>
+                      </div>
                       <!-- javascript -->
                       <div class="item">
                         <div class="col-sm-12 p-2">
@@ -586,7 +581,7 @@
                       <span class="fs-3 d-flex justify-content-center text-uppercase" style="color:#3D98DB;">Our Services</span>
                       <h2 class="text-center">OFFERINGS TO MY CLIENTS</h2>
                       <p class="text-center">
-                          mFile builds state of the art liquid staking protocols to grow the staking eceonomy
+                        We provide a range of essential tech services to clients all around the globe
                       </p>
                     </div>
                     <div class="col-12 col-md-5 mx-3 d-flex flex-column justify-content-center align-items-center net-column mt-5">
@@ -594,10 +589,12 @@
                           <i class="icofont-brainstorming"></i>
                         </div>
                         <div class="net-text text-center d-flex flex-column py-5">
-                            <h4 class="text-center">ML Application Development</h4>
+                            <h4 class="text-center">Machine Learning & Deep Learning</h4>
                             <p class="param d-flex">
-                              Accelerate machine learning tasks at every stage of your workflow. 
-                              Use pre-trained or train your own models and move from development to production.
+                              With my expertise in machine learning, deep learning computer vision and natural 
+                              language processing, I can help you build intelligent systems. I am skilled in using a variety of AI tools and technologies.
+                              I can help you choose the right tools and 
+                              technologies for your specific needs
                             </p>
                         </div>
                     </div>
@@ -606,11 +603,12 @@
                         <i class="icofont-responsive"></i>
                       </div>
                         <div class="net-text text-center d-flex flex-column py-5">
-                            <h4 class="text-center">Web Application Development</h4>
+                            <h4 class="text-center">Website Development</h4>
                             <p class="param d-flex">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Fugit quaerat numquam omnis fugiat nostrum illo ut. 
-                                Porro, quas exercitationem! Ad quisquam quo maiores, nulla illo consequuntur! Impedit odit quis rem?
+                              I am skilled in using a variety of technologies and frameworks, including HTML, 
+                              CSS, JavaScript, Django, Flask, and Fast Api. I can help you choose the right 
+                              tools and technologies for your project, and ensure that your website is fast, 
+                              responsive, and easy to use
                             </p>
                         </div>
                     </div>
@@ -619,11 +617,11 @@
                         <i class="icofont-dashboard-web"></i>
                       </div>
                         <div class="net-text text-center d-flex flex-column py-5">
-                            <h4 class="text-center">Web Design</h4>
+                            <h4 class="text-center">Web Automation</h4>
                             <p class="param d-flex">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Fugit quaerat numquam omnis fugiat nostrum illo ut. 
-                                Porro, quas exercitationem! Ad quisquam quo maiores, nulla illo consequuntur! Impedit odit quis rem?
+                              In addition to web scraping, I also offer web automation services to help you 
+                              automate repetitive tasks and save time. Whether you need to automate data entry, 
+                              report generation, or testing, I can help you build custom solutions that meet your specific needs
                             </p>
                         </div>
                     </div>
@@ -634,13 +632,12 @@
                         <div class="net-text text-center d-flex flex-column py-5">
                             <h4 class="text-center">Creative Ideas</h4>
                             <p class="param d-flex">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Fugit quaerat numquam omnis fugiat nostrum illo ut. 
-                                Porro, quas exercitationem! Ad quisquam quo maiores, nulla illo consequuntur! Impedit odit quis rem?
+                              With my expertise in business strategy, product development, and marketing, 
+                              I can help you validate your ideas, refine your business model, and launch your startup. 
+                              I can also help you build a strong brand, connect with customers, and scale your business
                             </p>
                         </div>
                     </div>
-                
                 </div>
             </div>
           </div> 
@@ -835,35 +832,45 @@
               </div>
             </div>
           </div>
-        </main>
-        <footer class="mt-5" id="footer">
-          <div class="footer-top container">
-            <div class="row d-flex justify-content-center">
-              <div class="col-12 text-center mt-5">
-                <h2 class="text-light">Contact Me</h2>
-              </div>
-              <div class="col-12 col-md-6 py-5">
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name *" required>
+          <div class="reachout mt-5 py-5" id="reach_out">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 py-5">
+                  <span class="fs-3 d-flex justify-content-center text-uppercase" style="color:#3D98DB;">Reach out to me</span>
+                  <h2 class="text-center">Brief me on your project</h2>
+                  <p class="text-center">
+                    Feel free to reach out to us through any of the platforms listed below and let us know more about your project.
+                  </p>
                 </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email *" required>
-                  <small id="emailHelp" class="form-text text-light text-muted">We'll never share your email with anyone else.</small>
+                <div class="col-6 col-md-3 py-5 d-inline-flex justify-content-center align-content-center" id="platforms">
+                  <figure class="figure col text-center">
+                    <img src="./assets/logos/fiverr.svg" class="img-fluid" alt="" srcset="">
+                    <figcaption class="figure-caption pt-1">Fiver</figcaption>
+                  </figure>
                 </div>
-                <div class="form-group">
-                  <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Your Phone">
+                <div class="col-6 col-md-3 py-5 d-inline-flex justify-content-center align-content-center" id="platforms">
+                  <figure class="figure col text-center">
+                    <img src="./assets/logos/upwork.svg" class="img-fluid" alt="" srcset="">
+                    <figcaption class="figure-caption pt-1">Upwork</figcaption>
+                  </figure>
+                </div>                 
+                <div class="col-6 col-md-3 py-5 d-inline-flex justify-content-center align-content-center" id="platforms">
+                  <figure class="figure col text-center">
+                    <img src="./assets/logos/freelancer.svg" class="img-fluid" alt="" srcset="">
+                    <figcaption class="figure-caption pt-1">Freelancer</figcaption>
+                  </figure>
+                </div>               
+                <div class="col-6 col-md-3 py-5 d-inline-flex justify-content-center align-content-center" id="platforms">
+                  <figure class="figure col text-center">
+                    <img src="./assets/logos/skype.svg" class="img-fluid" alt="" srcset="">
+                    <figcaption class="figure-caption pt-1">Skype</figcaption>
+                  </figure>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 py-5">
-                <div class="form-group">
-                  <textarea type="text" class="form-control" rows=7 required style="resize:none;" id="exampleInputPassword1" placeholder="Your Message *"></textarea>
-                </div>
-              </div>
-              <div class="col-12 d-flex justify-content-center">
-                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
               </div>
             </div>
           </div>
+        </main>
+        <footer class="" id="footer">
           <div class="footer-middle py-5">
             <div class=" container">
               <div class="row">
@@ -882,6 +889,7 @@
                   <li class="px-2"><a href="#aboutme">Services</a></li>
                   <li class="px-2"><a href="#aboutme">Projects</a></li>
                   <li class="px-2"><a href="#aboutme">Testimonials</a></li>  
+                  <li class="px-2"><a href="#reach_out">Reach out</a></li>
                 </div>
               </div>
             </div>
@@ -900,7 +908,7 @@
     <script>
       var myVar;
       function myFunction() {
-        myVar = setTimeout(showPage, 3000);
+        myVar = setTimeout(showPage, 1000);
       }
       function showPage() {
         $("#loader").fadeOut("slow");
